@@ -14,7 +14,8 @@ export const useAGVData = () => {
         setLoading(true);
         
         // Fetch the JSON file from the public directory
-        const response = await fetch('/data/agv-data.json');
+        // Use process.env.PUBLIC_URL to handle subdirectory deployments
+        const response = await fetch(`${process.env.PUBLIC_URL}/data/agv-data.json`);
         if (!response.ok) {
           throw new Error('Failed to load AGV data');
         }
