@@ -1,0 +1,309 @@
+{
+  "lastUpdated": "2025-12-15T13:00:00Z",
+  "facilityName": "Advanced Manufacturing Facility - Building A",
+  "totalAGVs": 70,
+  "fleet": [
+    {
+      "id": "AGV-001",
+      "name": "Tow Unit Alpha",
+      "type": "tow",
+      "status": "active",
+      "batteryLevel": 87,
+      "navigationMethod": "magnetic_tape",
+      "currentTask": "Transport pallet to Station B",
+      "location": { "x": 120, "y": 340 },
+      "lastMaintenance": "2025-12-01",
+      "nextMaintenance": "2026-01-01",
+      "operatingHours": 1240,
+      "tasksCompleted": 3450,
+      "averageTaskTime": 8.5,
+      "color": "#10b981"
+    },
+    {
+      "id": "AGV-002",
+      "name": "Unit Load Beta",
+      "type": "unit_load",
+      "status": "charging",
+      "batteryLevel": 34,
+      "navigationMethod": "lidar",
+      "currentTask": "Charging at Station C2",
+      "location": { "x": 450, "y": 120 },
+      "lastMaintenance": "2025-11-28",
+      "nextMaintenance": "2025-12-28",
+      "operatingHours": 980,
+      "tasksCompleted": 2890,
+      "averageTaskTime": 9.2,
+      "color": "#3b82f6"
+    },
+    {
+      "id": "AGV-003",
+      "name": "Forklift Gamma",
+      "type": "forklift",
+      "status": "idle",
+      "batteryLevel": 92,
+      "navigationMethod": "vision",
+      "currentTask": null,
+      "location": { "x": 680, "y": 450 },
+      "lastMaintenance": "2025-12-10",
+      "nextMaintenance": "2026-01-10",
+      "operatingHours": 1520,
+      "tasksCompleted": 4120,
+      "averageTaskTime": 7.8,
+      "color": "#f59e0b"
+    },
+    {
+      "id": "AGV-004",
+      "name": "Assembly Delta",
+      "type": "assembly_line",
+      "status": "active",
+      "batteryLevel": 76,
+      "navigationMethod": "qr_code",
+      "currentTask": "Moving components to Line 5",
+      "location": { "x": 320, "y": 580 },
+      "lastMaintenance": "2025-12-05",
+      "nextMaintenance": "2026-01-05",
+      "operatingHours": 1105,
+      "tasksCompleted": 3210,
+      "averageTaskTime": 8.9,
+      "color": "#10b981"
+    },
+    {
+      "id": "AGV-005",
+      "name": "Heavy Load Epsilon",
+      "type": "heavy_load",
+      "status": "active",
+      "batteryLevel": 65,
+      "navigationMethod": "magnetic_tape",
+      "currentTask": "Transporting machinery part",
+      "location": { "x": 780, "y": 200 },
+      "lastMaintenance": "2025-11-20",
+      "nextMaintenance": "2025-12-20",
+      "operatingHours": 1890,
+      "tasksCompleted": 1560,
+      "averageTaskTime": 15.3,
+      "color": "#10b981"
+    },
+    {
+      "id": "AGV-006",
+      "name": "Tow Unit Zeta",
+      "type": "tow",
+      "status": "maintenance",
+      "batteryLevel": 45,
+      "navigationMethod": "magnetic_tape",
+      "currentTask": "Scheduled maintenance",
+      "location": { "x": 150, "y": 680 },
+      "lastMaintenance": "2025-12-15",
+      "nextMaintenance": "2026-01-15",
+      "operatingHours": 2100,
+      "tasksCompleted": 5670,
+      "averageTaskTime": 8.1,
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "AGV-007",
+      "name": "Unit Load Eta",
+      "type": "unit_load",
+      "status": "active",
+      "batteryLevel": 91,
+      "navigationMethod": "lidar",
+      "currentTask": "Delivering to Warehouse B",
+      "location": { "x": 890, "y": 345 },
+      "lastMaintenance": "2025-12-08",
+      "nextMaintenance": "2026-01-08",
+      "operatingHours": 845,
+      "tasksCompleted": 2340,
+      "averageTaskTime": 9.5,
+      "color": "#10b981"
+    },
+    {
+      "id": "AGV-008",
+      "name": "Forklift Theta",
+      "type": "forklift",
+      "status": "error",
+      "batteryLevel": 88,
+      "navigationMethod": "vision",
+      "currentTask": "Error: Obstacle detection failure",
+      "location": { "x": 560, "y": 720 },
+      "lastMaintenance": "2025-11-30",
+      "nextMaintenance": "2025-12-30",
+      "operatingHours": 1678,
+      "tasksCompleted": 3980,
+      "averageTaskTime": 8.2,
+      "color": "#ef4444"
+    },
+    {
+      "id": "AGV-009",
+      "name": "Assembly Iota",
+      "type": "assembly_line",
+      "status": "idle",
+      "batteryLevel": 58,
+      "navigationMethod": "qr_code",
+      "currentTask": null,
+      "location": { "x": 245, "y": 410 },
+      "lastMaintenance": "2025-12-12",
+      "nextMaintenance": "2026-01-12",
+      "operatingHours": 923,
+      "tasksCompleted": 2567,
+      "averageTaskTime": 9.1,
+      "color": "#f59e0b"
+    },
+    {
+      "id": "AGV-010",
+      "name": "Heavy Load Kappa",
+      "type": "heavy_load",
+      "status": "charging",
+      "batteryLevel": 28,
+      "navigationMethod": "magnetic_tape",
+      "currentTask": "Charging at Station H1",
+      "location": { "x": 920, "y": 580 },
+      "lastMaintenance": "2025-11-25",
+      "nextMaintenance": "2025-12-25",
+      "operatingHours": 2234,
+      "tasksCompleted": 1890,
+      "averageTaskTime": 14.9,
+      "color": "#3b82f6"
+    }
+  ],
+  "fleetSummary": {
+    "active": 45,
+    "idle": 12,
+    "charging": 8,
+    "maintenance": 3,
+    "error": 2
+  },
+  "agvTypeDistribution": {
+    "tow": 18,
+    "unit_load": 22,
+    "forklift": 15,
+    "assembly_line": 10,
+    "heavy_load": 5
+  },
+  "taskHistory": [
+    { "date": "2025-12-15", "totalTasks": 145, "completedTasks": 142, "failedTasks": 3, "plannedTasks": 150 },
+    { "date": "2025-12-14", "totalTasks": 158, "completedTasks": 155, "failedTasks": 3, "plannedTasks": 160 },
+    { "date": "2025-12-13", "totalTasks": 152, "completedTasks": 148, "failedTasks": 4, "plannedTasks": 155 },
+    { "date": "2025-12-12", "totalTasks": 147, "completedTasks": 145, "failedTasks": 2, "plannedTasks": 150 },
+    { "date": "2025-12-11", "totalTasks": 139, "completedTasks": 137, "failedTasks": 2, "plannedTasks": 142 },
+    { "date": "2025-12-10", "totalTasks": 143, "completedTasks": 140, "failedTasks": 3, "plannedTasks": 145 },
+    { "date": "2025-12-09", "totalTasks": 135, "completedTasks": 133, "failedTasks": 2, "plannedTasks": 138 }
+  ],
+  "performanceMetrics": [
+    { "date": "2025-12-15", "averageCompletionTime": 9.2, "fleetUtilization": 78.5, "downtime": 2.3, "energyConsumed": 245.6 },
+    { "date": "2025-12-14", "averageCompletionTime": 8.9, "fleetUtilization": 81.2, "downtime": 1.8, "energyConsumed": 258.3 },
+    { "date": "2025-12-13", "averageCompletionTime": 9.5, "fleetUtilization": 76.8, "downtime": 2.9, "energyConsumed": 242.1 },
+    { "date": "2025-12-12", "averageCompletionTime": 9.1, "fleetUtilization": 79.4, "downtime": 2.1, "energyConsumed": 251.7 },
+    { "date": "2025-12-11", "averageCompletionTime": 9.7, "fleetUtilization": 74.3, "downtime": 3.2, "energyConsumed": 235.8 },
+    { "date": "2025-12-10", "averageCompletionTime": 8.8, "fleetUtilization": 82.1, "downtime": 1.5, "energyConsumed": 264.9 },
+    { "date": "2025-12-09", "averageCompletionTime": 9.3, "fleetUtilization": 77.6, "downtime": 2.6, "energyConsumed": 248.4 }
+  ],
+  "navigationHeatmap": {
+    "facilityDimensions": { "width": 1000, "height": 800 },
+    "gridSize": 20,
+    "trafficData": [
+      { "x": 120, "y": 340, "intensity": 85 },
+      { "x": 140, "y": 340, "intensity": 92 },
+      { "x": 160, "y": 340, "intensity": 88 },
+      { "x": 180, "y": 340, "intensity": 76 },
+      { "x": 320, "y": 580, "intensity": 94 },
+      { "x": 340, "y": 580, "intensity": 89 },
+      { "x": 360, "y": 580, "intensity": 82 },
+      { "x": 450, "y": 120, "intensity": 78 },
+      { "x": 470, "y": 120, "intensity": 85 },
+      { "x": 490, "y": 120, "intensity": 91 },
+      { "x": 560, "y": 720, "intensity": 67 },
+      { "x": 580, "y": 720, "intensity": 71 },
+      { "x": 680, "y": 450, "intensity": 95 },
+      { "x": 700, "y": 450, "intensity": 98 },
+      { "x": 720, "y": 450, "intensity": 93 },
+      { "x": 780, "y": 200, "intensity": 88 },
+      { "x": 800, "y": 200, "intensity": 84 },
+      { "x": 890, "y": 345, "intensity": 79 },
+      { "x": 245, "y": 410, "intensity": 86 },
+      { "x": 920, "y": 580, "intensity": 73 },
+      { "x": 400, "y": 400, "intensity": 100 },
+      { "x": 420, "y": 400, "intensity": 97 },
+      { "x": 440, "y": 400, "intensity": 95 },
+      { "x": 460, "y": 400, "intensity": 92 }
+    ]
+  },
+  "utilizationTimeline": [
+    {
+      "agvId": "AGV-001",
+      "agvName": "Tow Unit Alpha",
+      "activities": [
+        { "type": "active", "startTime": "08:00", "endTime": "10:30", "duration": 150 },
+        { "type": "charging", "startTime": "10:30", "endTime": "11:00", "duration": 30 },
+        { "type": "active", "startTime": "11:00", "endTime": "15:00", "duration": 240 },
+        { "type": "idle", "startTime": "15:00", "endTime": "15:30", "duration": 30 },
+        { "type": "active", "startTime": "15:30", "endTime": "17:00", "duration": 90 }
+      ]
+    },
+    {
+      "agvId": "AGV-002",
+      "agvName": "Unit Load Beta",
+      "activities": [
+        { "type": "active", "startTime": "08:00", "endTime": "12:00", "duration": 240 },
+        { "type": "idle", "startTime": "12:00", "endTime": "12:30", "duration": 30 },
+        { "type": "active", "startTime": "12:30", "endTime": "14:30", "duration": 120 },
+        { "type": "charging", "startTime": "14:30", "endTime": "16:00", "duration": 90 }
+      ]
+    },
+    {
+      "agvId": "AGV-003",
+      "agvName": "Forklift Gamma",
+      "activities": [
+        { "type": "charging", "startTime": "08:00", "endTime": "08:45", "duration": 45 },
+        { "type": "active", "startTime": "08:45", "endTime": "13:00", "duration": 255 },
+        { "type": "idle", "startTime": "13:00", "endTime": "14:00", "duration": 60 },
+        { "type": "active", "startTime": "14:00", "endTime": "17:00", "duration": 180 }
+      ]
+    },
+    {
+      "agvId": "AGV-004",
+      "agvName": "Assembly Delta",
+      "activities": [
+        { "type": "active", "startTime": "08:00", "endTime": "11:00", "duration": 180 },
+        { "type": "charging", "startTime": "11:00", "endTime": "11:45", "duration": 45 },
+        { "type": "active", "startTime": "11:45", "endTime": "16:30", "duration": 285 },
+        { "type": "idle", "startTime": "16:30", "endTime": "17:00", "duration": 30 }
+      ]
+    },
+    {
+      "agvId": "AGV-005",
+      "agvName": "Heavy Load Epsilon",
+      "activities": [
+        { "type": "active", "startTime": "08:00", "endTime": "10:00", "duration": 120 },
+        { "type": "idle", "startTime": "10:00", "endTime": "10:30", "duration": 30 },
+        { "type": "active", "startTime": "10:30", "endTime": "14:00", "duration": 210 },
+        { "type": "charging", "startTime": "14:00", "endTime": "15:30", "duration": 90 },
+        { "type": "active", "startTime": "15:30", "endTime": "17:00", "duration": 90 }
+      ]
+    }
+  ],
+  "incidents": [
+    {
+      "id": "INC-001",
+      "date": "2025-12-14",
+      "time": "14:32:00",
+      "agvId": "AGV-003",
+      "agvName": "Forklift Gamma",
+      "type": "obstacle_detection",
+      "severity": "low",
+      "resolved": true,
+      "resolutionTime": 5,
+      "description": "Obstacle detected in path, route recalculated automatically"
+    },
+    {
+      "id": "INC-002",
+      "date": "2025-12-14",
+      "time": "09:15:00",
+      "agvId": "AGV-007",
+      "agvName": "Unit Load Eta",
+      "type": "battery_low",
+      "severity": "medium",
+      "resolved": true,
+      "resolutionTime": 45,
+      "description": "Battery level dropped below threshold, AGV routed to charging station"
+    }
+  ]
+}
