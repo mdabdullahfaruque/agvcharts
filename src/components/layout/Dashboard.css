@@ -98,38 +98,50 @@
 /* View Selector */
 .view-selector {
   display: flex;
-  gap: 12px;
+  gap: 16px;
   margin-bottom: 24px;
+  background: white;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 .view-selector button {
-  padding: 12px 24px;
-  background: white;
+  flex: 1;
+  padding: 14px 28px;
+  background: transparent;
   border: 2px solid transparent;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
   color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
 }
 
 .view-selector button:hover {
   background: #f8fafc;
   color: #1e293b;
+  transform: translateY(-2px);
 }
 
 .view-selector button.active {
-  background: white;
-  border-color: #667eea;
-  color: #667eea;
-  box-shadow: 0 2px 4px rgba(102, 126, 234, 0.2);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  transform: translateY(-2px);
 }
 
 /* Charts Grid */
 .charts-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-bottom: 24px;
 }
@@ -156,7 +168,7 @@
 }
 
 .chart-card-full {
-  grid-column: 1 / -1;
+  grid-column: span 2;
 }
 
 .chart-container {
@@ -221,7 +233,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .charts-grid {
     grid-template-columns: 1fr;
   }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import FleetCommandCenter from '../charts/FleetCommandCenter';
 import FleetStatusChart from '../charts/FleetStatusChart';
 import AGVTypeChart from '../charts/AGVTypeChart';
 import TaskCompletionChart from '../charts/TaskCompletionChart';
@@ -18,7 +19,7 @@ import {
 import './Dashboard.css';
 
 const Dashboard = ({ data }) => {
-  const [activeView, setActiveView] = useState('overview');
+  const [activeView, setActiveView] = useState('command');
 
   if (!data) {
     return (
@@ -49,6 +50,12 @@ const Dashboard = ({ data }) => {
       {/* View Selector */}
       <div className="view-selector">
         <button 
+          className={activeView === 'command' ? 'active' : ''}
+          onClick={() => setActiveView('command')}
+        >
+          🎯 Command Center
+        </button>
+        <button 
           className={activeView === 'overview' ? 'active' : ''}
           onClick={() => setActiveView('overview')}
         >
@@ -69,6 +76,10 @@ const Dashboard = ({ data }) => {
       </div>
 
       {/* Charts Grid */}
+      {activeView === 'command' && (
+        <FleetCommandCenter data={data} />
+      )}
+
       {activeView === 'overview' && (
         <div className="charts-grid">
           <div className="chart-card">
