@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import InteractiveRadarChart from './InteractiveRadarChart';
 import './FleetCommandCenter.css';
 
 const FleetCommandCenter = ({ data }) => {
@@ -219,33 +220,9 @@ const FleetCommandCenter = ({ data }) => {
           </div>
         </div>
 
-        {/* Alerts & Notifications */}
-        <div className="alerts-panel">
-          <div className="board-header">
-            <h3>Active Alerts</h3>
-            <span className="alert-count">{recentIncidents.length}</span>
-          </div>
-          <div className="alerts-list">
-            {recentIncidents.length > 0 ? (
-              recentIncidents.map((incident, index) => (
-                <div key={index} className={`alert-item alert-${incident.severity}`}>
-                  <div className="alert-icon">
-                    {incident.severity === 'high' ? '🔴' : incident.severity === 'medium' ? '🟡' : '🟢'}
-                  </div>
-                  <div className="alert-content">
-                    <div className="alert-title">{incident.type}</div>
-                    <div className="alert-description">AGV-{incident.agvId} - {incident.description}</div>
-                    <div className="alert-time">{incident.timestamp}</div>
-                  </div>
-                </div>
-              ))
-            ) : (
-              <div className="no-alerts">
-                <div className="no-alerts-icon">✓</div>
-                <div>All systems normal</div>
-              </div>
-            )}
-          </div>
+        {/* Interactive D3 Radar Chart */}
+        <div className="radar-panel">
+          <InteractiveRadarChart data={data} />
         </div>
       </div>
 
