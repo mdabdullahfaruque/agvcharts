@@ -38,13 +38,6 @@ const Dashboard = ({ data }) => {
   const heatmapData = getNavigationHeatmapData(data);
   const ganttData = getUtilizationTimelineData(data);
 
-  // Calculate KPIs
-  const totalAGVs = data.totalAGVs;
-  const activeAGVs = data.fleetSummary.active;
-  const utilizationRate = ((activeAGVs / totalAGVs) * 100).toFixed(1);
-  const avgBattery = (data.fleet.reduce((sum, agv) => sum + agv.batteryLevel, 0) / data.fleet.length).toFixed(1);
-  const todayTasks = data.taskHistory[0].completedTasks;
-
   return (
     <div className="dashboard">
       {/* View Selector */}
